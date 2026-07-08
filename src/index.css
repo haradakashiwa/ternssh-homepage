@@ -96,7 +96,6 @@ body {
 
 .preview-shadow {
   box-shadow:
-    0 0 0 1px color-mix(in oklch, var(--color-border) 60%, transparent),
     0 24px 64px color-mix(in oklch, var(--color-primary) 15%, transparent);
 }
 

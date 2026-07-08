@@ -10,6 +10,21 @@ import { Link } from "react-router-dom";
 import { useApp } from "../lib/app-context";
 import { LINKS } from "../lib/links";
 
+function PreviewImage({ loading }: { loading: "eager" | "lazy" }) {
+  const { resolvedTheme } = useApp();
+  const src =
+    resolvedTheme === "dark" ? "/preview-dark.png" : "/preview-light.png";
+
+  return (
+    <img
+      src={src}
+      alt="ternssh dashboard preview"
+      className="w-full"
+      loading={loading}
+    />
+  );
+}
+
 export function HeroSection() {
   const { t } = useApp();
 
@@ -65,13 +80,8 @@ export function HeroSection() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl">
-          <div className="preview-shadow overflow-hidden rounded-xl border border-[var(--color-border)]">
-            <img
-              src="/preview.png"
-              alt="ternssh dashboard preview"
-              className="w-full"
-              loading="eager"
-            />
+          <div className="preview-shadow overflow-hidden rounded-[25px]">
+            <PreviewImage loading="eager" />
           </div>
         </div>
       </div>
@@ -94,13 +104,8 @@ export function PreviewSection() {
             {t.preview.subtitle}
           </p>
         </div>
-        <div className="preview-shadow mx-auto max-w-5xl overflow-hidden rounded-xl">
-          <img
-            src="/preview.png"
-            alt="ternssh dashboard preview"
-            className="w-full"
-            loading="lazy"
-          />
+        <div className="preview-shadow mx-auto max-w-5xl overflow-hidden rounded-[25px]">
+          <PreviewImage loading="lazy" />
         </div>
       </div>
     </section>
