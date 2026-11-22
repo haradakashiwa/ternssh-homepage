@@ -2,6 +2,7 @@ export const SSG_ROUTES = [
   "/",
   "/features",
   "/deploy",
+  "/desktop",
   "/docs/home",
   "/docs/features",
   "/docs/tech-stack",

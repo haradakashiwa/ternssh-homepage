@@ -1,7 +1,6 @@
 import { Navigate, useParams } from "react-router-dom";
 import { Markdown } from "../components/Markdown";
 import { DocsSidebar } from "../components/DocsSidebar";
-import { FeaturesGrid } from "../components/FeaturesGrid";
 import { useApp } from "../lib/app-context";
 import { getDocContent, isDocLocale, slugToPageName } from "../lib/docs";
 
@@ -39,7 +38,6 @@ export function DocsArticlePage() {
           <div className="glass rounded-2xl p-6 sm:p-8">
             <Markdown content={content} />
           </div>
-          {slug === "home" && <FeaturesGrid embedded />}
         </div>
       </div>
     </div>

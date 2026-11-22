@@ -3,6 +3,7 @@ import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/HomePage";
 import { FeaturesPage } from "./pages/FeaturesPage";
 import { DeployPage } from "./pages/DeployPage";
+import { DesktopPage } from "./pages/DesktopPage";
 import {
   DocsArticlePage,
   DocsIndexPage,
@@ -16,6 +17,7 @@ export function AppRoutes() {
         <Route index element={<HomePage />} />
         <Route path="features" element={<FeaturesPage />} />
         <Route path="deploy" element={<DeployPage />} />
+        <Route path="desktop" element={<DesktopPage />} />
         <Route path="docs" element={<DocsIndexPage />} />
         <Route path="docs/:lang/:slug" element={<DocsLegacyRedirectPage />} />
         <Route path="docs/:slug" element={<DocsArticlePage />} />

@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: { "@": "/src" },
+  },
   build: {
     outDir: "dist",
     assetsDir: "assets",
@@ -15,6 +18,7 @@ export default defineConfig({
       "rehype-raw",
       "rehype-sanitize",
       "lucide-react",
+      "motion",
     ],
   },
 });

@@ -1,24 +1,32 @@
-import { FeaturesGrid } from "../components/FeaturesGrid";
-import { PreviewSection } from "../components/Hero";
-import { useApp } from "../lib/app-context";
+import { FeaturesBento } from "@/components/home/FeaturesBento";
+import { CompareTable } from "@/components/home/CompareTable";
+import { SecuritySection } from "@/components/home/SecuritySection";
+import { CtaSection } from "@/components/home/CtaSection";
+import { Container, SectionHeader } from "@/components/site/primitives";
+import { useApp } from "@/lib/app-context";
 
 export function FeaturesPage() {
   const { t } = useApp();
-
   return (
     <>
-      <section className="hero-glow border-b border-[var(--color-border)] py-16">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <h1 className="text-3xl font-bold text-[var(--color-foreground)] sm:text-4xl">
-            {t.features.title}
-          </h1>
-          <p className="mt-3 text-[var(--color-muted-foreground)]">
-            {t.features.subtitle}
-          </p>
-        </div>
+      <section className="hero-glow pt-20">
+        <Container>
+          <SectionHeader
+            as="h1"
+            eyebrow={t.features.eyebrow}
+            title={t.features.title}
+            subtitle={t.features.subtitle}
+          />
+        </Container>
       </section>
-      <FeaturesGrid compact />
-      <PreviewSection />
+      <div className="-mt-24">
+        <FeaturesBento />
+      </div>
+      <CompareTable />
+      <SecuritySection />
+      <div className="pt-24">
+        <CtaSection />
+      </div>
     </>
   );
 }
