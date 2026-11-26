@@ -4,6 +4,7 @@ import { ProductsSection } from "@/components/home/ProductsSection";
 import { FeaturesBento } from "@/components/home/FeaturesBento";
 import { QuickStart } from "@/components/home/QuickStart";
 import { DesktopShowcase } from "@/components/home/DesktopShowcase";
+import { RemoteVibe } from "@/components/home/RemoteVibe";
 import { SecuritySection } from "@/components/home/SecuritySection";
 import { FaqSection } from "@/components/home/FaqSection";
 import { CtaSection } from "@/components/home/CtaSection";
@@ -17,6 +18,7 @@ export function HomePage() {
       <FeaturesBento />
       <QuickStart />
       <DesktopShowcase />
+      <RemoteVibe />
       <SecuritySection />
       <FaqSection />
       <CtaSection />

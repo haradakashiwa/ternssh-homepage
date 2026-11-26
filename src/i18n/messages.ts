@@ -14,7 +14,7 @@ const zh = {
     getStarted: "开始使用",
   },
   hero: {
-    badge: "ternssh Desktop 已发布 · 原生 macOS / Windows 客户端",
+    badge: "新 · 离开电脑，用手机接着 vibe coding",
     titleA: "所有服务器，",
     titleB: "一个工作台。",
     subtitle:
@@ -195,6 +195,36 @@ const zh = {
     shotLocal: "本机终端与文件",
     shotServer: "服务器终端、文件与状态监控",
   },
+  remote: {
+    eyebrow: "Desktop · 网页端",
+    title: "离开电脑，vibe coding 不停",
+    subtitle:
+      "Claude Code 还在跑，人要出门了？在桌面版设置里打开「网页」，用手机浏览器接着管——看的就是桌面上那个终端，实时同步。",
+    points: [
+      {
+        key: "same",
+        title: "同一个终端，不是副本",
+        desc: "网页上的终端就是窗口里的会话：手机上敲的，电脑上同时出现；Agent 的每一行输出，两边同时刷新。",
+      },
+      {
+        key: "agent",
+        title: "找到正在跑 Agent 的终端",
+        desc: "运行 Claude Code 的终端带 ✳ 标记，开新会话、点快捷指令都在网页上完成。",
+      },
+      {
+        key: "phone",
+        title: "为手机设计",
+        desc: "手指拖动翻看输出；一排常用按键——Esc、Tab、Ctrl、方向键、^C——批准、打断都只要一下。",
+      },
+      {
+        key: "secure",
+        title: "局域网或公网都能用",
+        desc: "用户名密码只需登录一次，连续输错的地址自动锁定。面向公网时建议放在 HTTPS 之后。",
+      },
+    ],
+    phoneTitle: "手机上的 ternssh 网页端",
+    synced: "与桌面实时同步",
+  },
   security: {
     eyebrow: "安全",
     title: "数据和流量，始终在你手里",
@@ -234,6 +264,7 @@ const zh = {
       { label: "AI 命令助手", web: true, desktop: false },
       { label: "可拖拽网格仪表盘", web: true, desktop: false },
       { label: "Claude Code 状态与通知", web: false, desktop: true },
+      { label: "手机浏览器接管桌面上的终端", web: false, desktop: true },
       { label: "托盘与全局快捷键", web: false, desktop: true },
       { label: "Cloudflare Access 鉴权", web: true, desktop: true },
     ],
@@ -324,7 +355,7 @@ const en: Messages = {
     getStarted: "Get started",
   },
   hero: {
-    badge: "ternssh Desktop is here · native macOS & Windows client",
+    badge: "New · Step away and keep vibe coding from your phone",
     titleA: "Every server.",
     titleB: "One workspace.",
     subtitle:
@@ -506,6 +537,36 @@ const en: Messages = {
     shotLocal: "A local terminal and its files",
     shotServer: "A server's terminal, files and status",
   },
+  remote: {
+    eyebrow: "Desktop · Web",
+    title: "Step away, keep vibe coding",
+    subtitle:
+      "Claude Code is still working and you have to leave? Turn on Web in the desktop app's settings and carry on from your phone's browser — it shows the very terminal on your desktop, live.",
+    points: [
+      {
+        key: "same",
+        title: "The same terminal, not a copy",
+        desc: "The browser's terminal is the window's own session: what you type on your phone shows on the desktop, and every line the agent prints updates both at once.",
+      },
+      {
+        key: "agent",
+        title: "Spot the agents at work",
+        desc: "Terminals running Claude Code are marked ✳. Open new sessions and run snippets right from the browser.",
+      },
+      {
+        key: "phone",
+        title: "Made for phones",
+        desc: "Drag to scroll back through the output, and a bar of keys — Esc, Tab, Ctrl, the arrows, ^C — approves or interrupts in one tap.",
+      },
+      {
+        key: "secure",
+        title: "Local network or the internet",
+        desc: "Sign in once with a username and password; an address that keeps getting it wrong is locked out. Put it behind HTTPS when it faces the internet.",
+      },
+    ],
+    phoneTitle: "The ternssh web app on a phone",
+    synced: "Live with your desktop",
+  },
   security: {
     eyebrow: "Security",
     title: "Your data and traffic stay yours",
@@ -545,6 +606,7 @@ const en: Messages = {
       { label: "AI command assistant", web: true, desktop: false },
       { label: "Draggable grid dashboard", web: true, desktop: false },
       { label: "Claude Code status & notifications", web: false, desktop: true },
+      { label: "Take over the desktop's terminals from a phone", web: false, desktop: true },
       { label: "Tray & global hotkey", web: false, desktop: true },
       { label: "Cloudflare Access auth", web: true, desktop: true },
     ],

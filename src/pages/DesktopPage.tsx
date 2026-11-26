@@ -1,5 +1,6 @@
 import { DesktopShowcase } from "@/components/home/DesktopShowcase";
 import { CompareTable } from "@/components/home/CompareTable";
+import { RemoteVibe } from "@/components/home/RemoteVibe";
 import { DownloadCards } from "@/components/DownloadCards";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { Container } from "@/components/site/primitives";
@@ -27,6 +28,7 @@ export function DesktopPage() {
         </Container>
       </section>
       <DesktopShowcase withHeader={false} />
+      <RemoteVibe />
       <CompareTable />
     </>
   );
